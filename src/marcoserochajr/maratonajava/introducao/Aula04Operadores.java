@@ -1,6 +1,5 @@
 package marcoserochajr.maratonajava.introducao;
 
-import java.sql.SQLOutput;
 
 public class Aula04Operadores {
     static void main(String[] args) {
