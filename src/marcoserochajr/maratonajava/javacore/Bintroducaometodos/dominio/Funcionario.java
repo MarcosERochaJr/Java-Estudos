@@ -3,17 +3,30 @@ package marcoserochajr.maratonajava.javacore.Bintroducaometodos.dominio;
 public class Funcionario {
     public String nome;
     public int idade;
-    public double salario;
+    public double[] salarios;
 
-    public void impressora(){
-        System.out.println("----------");
+
+    public void imprimir(){
         System.out.println(this.nome);
         System.out.println(this.idade);
-        System.out.println(this.salario);
+        if (salarios == null) {
+            return;
+        }
+        for (double salario: this.salarios) {
+            System.out.print(salario + " ");
+        }
+        mediaSalarios();
     }
 
-    public void mediaSalarios(double n1, double n2, double n3){
-        double media = (n1 + n2 + n3) / 3;
-        System.out.println(media);
+    public void mediaSalarios(){
+        if (salarios == null) {
+            return;
+        }
+        double media = 0;
+        for (double salario: this.salarios) {
+            media = media + salario;
+        }
+        media /= salarios.length;
+        System.out.println("\nMedia salarial: " + media);
     }
 }
