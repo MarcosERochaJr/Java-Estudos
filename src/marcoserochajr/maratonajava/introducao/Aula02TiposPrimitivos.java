@@ -3,6 +3,9 @@ package marcoserochajr.maratonajava.introducao;
 public class Aula02TiposPrimitivos {
     static void main(String[] args) {
         //int, double, float, char, byte, short, long, boolean
+
+
+        // Variáveis sintaxe (tipo nomeVariavel = valor;)
         int idade = (int) 25.0F;
         long numeroGrande = 999999;
         double salarioDouble = 2000;

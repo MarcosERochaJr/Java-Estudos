@@ -18,9 +18,13 @@ public class CarroTest01 {
         //Aqui eu nem preciso de ter os objetos. Apenas passar o novo valor para o atributo já funciona, pois estou mexendo em um atributo da classe e não de objeto
 
 
-        System.out.println(Carro.velocidadeLimite); // Imprimindo o valor estático para a classe referente a velocidadeLimite
-        Carro.velocidadeLimite = 180;               // Alterando o valor estático da classe para 180
-        System.out.println(Carro.velocidadeLimite); // Imprimindo o novo valor estático para a classe referente a velocidadeLimite
+//        System.out.println(Carro.velocidadeLimite); // Imprimindo o valor estático para a classe referente a velocidadeLimite
+//        Carro.velocidadeLimite = 180;               // Alterando o valor estático da classe para 180
+//        System.out.println(Carro.velocidadeLimite); // Imprimindo o novo valor estático para a classe referente a velocidadeLimite
 
+        Carro.setVelocidadeLimite(230); // Agora com o velocidadeLimite private e estático eu consigo usar o set
+        System.out.println(Carro.getVelocidadeLimite()); // E aqui consigo pegar esse valor
+        Carro.setVelocidadeLimite(200);
+        System.out.println(Carro.getVelocidadeLimite());
     }
 }
