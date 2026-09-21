@@ -14,7 +14,7 @@ public class JogadorTest01 {
 
 
 
-
+        //Aqui estamos imprimindo os jogadores guardados no array
         for (Jogador jogador : jogadores){
             jogador.imprimirJogador();
         }

@@ -11,6 +11,8 @@ public class Jogador {
     private double peso;
     private String posicao;
 
+    private Time time;
+
     //-------------------------------------------------//
 
 
@@ -53,6 +55,10 @@ public class Jogador {
         return posicao;
     }
 
+    public Time getTime() {
+        return time;
+    }
+
     //-------------------------------------------------//
 
 
@@ -80,6 +86,10 @@ public class Jogador {
         this.posicao = posicao;
     }
 
+    public void setTime(Time time) {
+        this.time = time;
+    }
+
     //-------------------------------------------------//
 
 
@@ -88,6 +98,9 @@ public class Jogador {
 
     public void imprimirJogador(){
         System.out.println("Nome: " + this.nome + " | Idade: " + this.idade + " | Altura: " + this.altura + " | Peso: " + this.peso + " | Posicao: " + this.posicao);
+        if (time != null) {
+            System.out.println("Time: " + time.getNome());
+        }
     }
 
     //-------------------------------------------------//
