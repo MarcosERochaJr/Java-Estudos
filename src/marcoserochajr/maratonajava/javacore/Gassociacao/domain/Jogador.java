@@ -20,6 +20,10 @@ public class Jogador {
     //----- Permite criar um objeto já informando -----//
     //---------------- seus atributos -----------------//
 
+    public Jogador(String nome) {
+        this.nome = nome;
+    }
+
     public Jogador(String nome, int idade, double altura, double peso, String posicao) {
         this.nome = nome;
         this.idade = idade;
