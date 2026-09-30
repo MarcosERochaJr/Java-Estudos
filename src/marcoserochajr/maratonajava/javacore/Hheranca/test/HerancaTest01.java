@@ -14,13 +14,11 @@ public class HerancaTest01 {
         endereco02.setRua("Avenida Ismael Alonso y Alonso");
         endereco02.setNumero(3606);
         endereco02.setCep("14403-500");
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Marcos Elias");
+        Pessoa pessoa = new Pessoa("Marcos Elias");
         pessoa.setIdade(25);
         pessoa.setEndereco(endereco);
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Amanda Helen");
+        Funcionario funcionario = new Funcionario("Amanda Helen");
         funcionario.setIdade(24);
         funcionario.setEndereco(endereco02);
         funcionario.setSalario(1234);

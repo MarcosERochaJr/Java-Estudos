@@ -9,6 +9,15 @@ public class Funcionario extends Pessoa {
         System.out.println("Salário: R$ " + this.salario);
     }
 
+    public Funcionario(String nome) {
+        super(nome);
+    }
+
+    // Agora conseguimos colocar o this.nome aqui mesmo sendo da classe Pessoa
+    public void relatorioPagamento(){
+        System.out.println("Eu " + this.nome + " recebi R$ " + this.salario);
+    }
+
     public double getSalario() {
         return salario;
     }
