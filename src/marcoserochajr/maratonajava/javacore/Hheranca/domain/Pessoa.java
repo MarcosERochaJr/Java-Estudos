@@ -20,7 +20,20 @@ public class Pessoa {
         System.out.println("Endereco: " + this.endereco.getRua() + ", " + this.endereco.getNumero() + ", " + this.endereco.getCep());
     }
 
+    static {
+        System.out.println("Dentro do bloco inicialização estático de Pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização 1 de Pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização 2 de Pessoa");
+    }
+
     public Pessoa(String nome) {
+        System.out.println("Dentro do construtor de Pessoa");
         this.nome = nome;
     }
 
