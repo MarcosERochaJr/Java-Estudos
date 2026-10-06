@@ -2,10 +2,10 @@ package marcoserochajr.maratonajava.javacore.Kenum.domain;
 
 public class Cliente {
     //Podemos criar uma enumeração dentro da classe direto também
-
-    public enum TipoPagamento {
-    DEBITO, CREDITO
-    }
+//
+//    public enum TipoPagamento {
+//    DEBITO, CREDITO
+//    }
 
     //Mas ainda precisamos criar o atributo
     private String nome;
