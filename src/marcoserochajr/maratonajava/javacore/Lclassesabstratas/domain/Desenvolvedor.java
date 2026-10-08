@@ -12,4 +12,10 @@ public class Desenvolvedor extends Funcionario{
                 ", salario=" + salario +
                 '}';
     }
+
+    @Override
+    public void calculaBonus() {
+        this.salario = this.salario + salario * 0.1;
+    }
+
 }
